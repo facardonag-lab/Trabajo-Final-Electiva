@@ -38,27 +38,36 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 1.5rem;
 	}
 
 	.card {
-		overflow: hidden;
-		border-radius: 20px;
+		aspect-ratio: 1;
+		border-radius: 50%;
 		border: 1px solid rgba(0, 0, 0, 0.08);
-		background: #ffffff;
-		box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+		background: rgba(255, 255, 255, 0.92);
+		box-shadow: 0 18px 40px rgba(37, 99, 235, 0.18);
+		padding: 1.5rem;
+		display: grid;
+		place-items: center;
+		text-align: center;
 	}
 
 	img {
 		display: block;
-		width: 100%;
-		height: 220px;
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
 		object-fit: cover;
+		border: 4px solid rgba(96, 165, 250, 0.35);
+		box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
 	}
 
 	.content {
-		padding: 1rem;
+		display: grid;
+		gap: 0.8rem;
+		justify-items: center;
 	}
 
 	h2 {
@@ -75,6 +84,7 @@
 		margin: 0;
 		display: grid;
 		gap: 0.75rem;
+		justify-items: center;
 	}
 
 	dt {
